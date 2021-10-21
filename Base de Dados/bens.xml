@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mysql xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<name name="ambientes">
+	<row>
+		<idambiente>1</idambiente>
+		<idbloco>3</idbloco>
+		<descricao>Tornearia</descricao>
+	</row>
+	<row>
+		<idambiente>2</idambiente>
+		<idbloco>3</idbloco>
+		<descricao>Lab. Metrologia</descricao>
+	</row>
+	<row>
+		<idambiente>3</idambiente>
+		<idbloco>3</idbloco>
+		<descricao>Sala Torno CNC</descricao>
+	</row>
+	<row>
+		<idambiente>4</idambiente>
+		<idbloco>3</idbloco>
+		<descricao>Fresagem  e Ajustagem</descricao>
+	</row>
+	<row>
+		<idambiente>5</idambiente>
+		<idbloco>4</idbloco>
+		<descricao>Sala 4</descricao>
+	</row>
+	<row>
+		<idambiente>6</idambiente>
+		<idbloco>2</idbloco>
+		<descricao>Nucleo de Treinamento Avançado</descricao>
+	</row>
+</name>
+<name name="armarios">
+	<row>
+		<idarmario>1</idarmario>
+		<idambiente>2</idambiente>
+		<descricao>Armario 1</descricao>
+	</row>
+	<row>
+		<idarmario>2</idarmario>
+		<idambiente>2</idambiente>
+		<descricao>Armario 2</descricao>
+	</row>
+</name>
+<name name="bens">
+	<row>
+		<idben>1</idben>
+		<idbloco>3</idbloco>
+		<idarmario>1</idarmario>
+		<iddivisao>1</iddivisao>
+		<idambiente>2</idambiente>
+		<tipo>Ferramenta</tipo>
+		<descricao>Paquimetro</descricao>
+		<marca>Mitutoyo</marca>
+		<modelo>a1b2c3d4</modelo>
+		<patrimonio>67354348</patrimonio>
+		<ni>0</ni>
+		<valor>300,00</valor>
+	</row>
+	<row>
+		<idben>6</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>0</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Centro de Usinagem</descricao>
+		<marca>Romi</marca>
+		<modelo>a1b2c3d4</modelo>
+		<patrimonio>056431386</patrimonio>
+		<ni>0</ni>
+		<valor>500.000,00</valor>
+	</row>
+	<row>
+		<idben>11</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>1</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno Convencional</descricao>
+		<marca>Nardini </marca>
+		<modelo>Mascote MS-205 </modelo>
+		<patrimonio>3130031384 </patrimonio>
+		<ni>0</ni>
+		<valor>20.000,00</valor>
+	</row>
+	<row>
+		<idben>12</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>1</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno Convencional</descricao>
+		<marca>Nardini </marca>
+		<modelo>Mascote MS-205 </modelo>
+		<patrimonio>3130031382 </patrimonio>
+		<ni>0</ni>
+		<valor>20.000,00</valor>
+	</row>
+	<row>
+		<idben>13</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>1</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno Convencional</descricao>
+		<marca>Nardini </marca>
+		<modelo>Mascote MS-205 </modelo>
+		<patrimonio>3130031381 </patrimonio>
+		<ni>0</ni>
+		<valor>20.000,00</valor>
+	</row>
+	<row>
+		<idben>15</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>1</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno Convencional</descricao>
+		<marca>Nardini </marca>
+		<modelo>Mascote MS-205 </modelo>
+		<patrimonio>3130003518 </patrimonio>
+		<ni>0</ni>
+		<valor>20.000,00</valor>
+	</row>
+	<row>
+		<idben>16</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>1</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno Convencional</descricao>
+		<marca>Nardini </marca>
+		<modelo>Mascote MS-205 </modelo>
+		<patrimonio>3130001724 </patrimonio>
+		<ni>0</ni>
+		<valor>20.000,00</valor>
+	</row>
+	<row>
+		<idben>17</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>1</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno Convencional</descricao>
+		<marca>Nardini </marca>
+		<modelo>Mascote MS-205 </modelo>
+		<patrimonio>3130004952 </patrimonio>
+		<ni>0</ni>
+		<valor>20.000,00</valor>
+	</row>
+	<row>
+		<idben>18</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>1</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno Convencional</descricao>
+		<marca>Nardini </marca>
+		<modelo>Mascote MS-205 </modelo>
+		<patrimonio>3130004953 </patrimonio>
+		<ni>0</ni>
+		<valor>20.000,00</valor>
+	</row>
+	<row>
+		<idben>19</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>1</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno Convencional</descricao>
+		<marca>Nardini </marca>
+		<modelo>Mascote MS-205 </modelo>
+		<patrimonio>3130001275 </patrimonio>
+		<ni>0</ni>
+		<valor>20.000,00</valor>
+	</row>
+	<row>
+		<idben>20</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>1</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno Convencional</descricao>
+		<marca>Nardini </marca>
+		<modelo>Mascote MS-205 </modelo>
+		<patrimonio>3130004951 </patrimonio>
+		<ni>0</ni>
+		<valor>20.000,00</valor>
+	</row>
+	<row>
+		<idben>22</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>3</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Torno CNC</descricao>
+		<marca>Siemens</marca>
+		<modelo>Sinumerik 802D base line</modelo>
+		<patrimonio>3130005498</patrimonio>
+		<ni>0</ni>
+		<valor>150.000,00</valor>
+	</row>
+	<row>
+		<idben>23</idben>
+		<idbloco>3</idbloco>
+		<idarmario>1</idarmario>
+		<iddivisao>1</iddivisao>
+		<idambiente>2</idambiente>
+		<tipo>Instrumento</tipo>
+		<descricao>Durometro</descricao>
+		<marca>Digimess</marca>
+		<modelo>OSM (EXP) </modelo>
+		<patrimonio>3130016403</patrimonio>
+		<ni>0</ni>
+		<valor>200,00</valor>
+	</row>
+	<row>
+		<idben>24</idben>
+		<idbloco>3</idbloco>
+		<idarmario>1</idarmario>
+		<iddivisao>1</iddivisao>
+		<idambiente>2</idambiente>
+		<tipo>Instrumento</tipo>
+		<descricao>Paquimetro</descricao>
+		<marca>Mitutoyo </marca>
+		<modelo>50 divisões </modelo>
+		<patrimonio>00004</patrimonio>
+		<ni>1</ni>
+		<valor>300,00</valor>
+	</row>
+	<row>
+		<idben>25</idben>
+		<idbloco>3</idbloco>
+		<idarmario>1</idarmario>
+		<iddivisao>1</iddivisao>
+		<idambiente>2</idambiente>
+		<tipo>Instrumento</tipo>
+		<descricao>Paquimetro</descricao>
+		<marca>Mitutoyo</marca>
+		<modelo>50 divisões</modelo>
+		<patrimonio>00001</patrimonio>
+		<ni>1</ni>
+		<valor>300,00</valor>
+	</row>
+	<row>
+		<idben>26</idben>
+		<idbloco>3</idbloco>
+		<idarmario>1</idarmario>
+		<iddivisao>1</iddivisao>
+		<idambiente>2</idambiente>
+		<tipo>Ferramenta</tipo>
+		<descricao>Micrometro </descricao>
+		<marca>Mitutoyo</marca>
+		<modelo>0-25 Centesimal </modelo>
+		<patrimonio>00002</patrimonio>
+		<ni>1</ni>
+		<valor>300,00</valor>
+	</row>
+	<row>
+		<idben>27</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>4</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Plaina</descricao>
+		<marca>Zocca</marca>
+		<modelo>500</modelo>
+		<patrimonio>00003</patrimonio>
+		<ni>1</ni>
+		<valor>25.000,00</valor>
+	</row>
+	<row>
+		<idben>28</idben>
+		<idbloco>3</idbloco>
+		<idarmario>0</idarmario>
+		<iddivisao>0</iddivisao>
+		<idambiente>4</idambiente>
+		<tipo>Maquina</tipo>
+		<descricao>Prensa Hidráulica</descricao>
+		<marca>SMD</marca>
+		<modelo>30 ton</modelo>
+		<patrimonio>3130001009 </patrimonio>
+		<ni>0</ni>
+		<valor>5.000,00</valor>
+	</row>
+	<row>
+		<idben>29</idben>
+		<idbloco>3</idbloco>
+		<idarmario>1</idarmario>
+		<iddivisao>1</iddivisao>
+		<idambiente>2</idambiente>
+		<tipo>Instrumento</tipo>
+		<descricao>Paquimetro</descricao>
+		<marca>Mitutoyo</marca>
+		<modelo>20 divisões</modelo>
+		<patrimonio>00005</patrimonio>
+		<ni>1</ni>
+		<valor>300,00</valor>
+	</row>
+</name>
+<name name="blocos">
+	<row>
+		<idbloco>1</idbloco>
+		<idunidade>2</idunidade>
+		<descricao>Bloco A</descricao>
+	</row>
+	<row>
+		<idbloco>2</idbloco>
+		<idunidade>2</idunidade>
+		<descricao>Bloco B</descricao>
+	</row>
+	<row>
+		<idbloco>3</idbloco>
+		<idunidade>2</idunidade>
+		<descricao>Bloco C-1° Andar</descricao>
+	</row>
+	<row>
+		<idbloco>4</idbloco>
+		<idunidade>1</idunidade>
+		<descricao>Bloco A</descricao>
+	</row>
+	<row>
+		<idbloco>5</idbloco>
+		<idunidade>1</idunidade>
+		<descricao>Bloco B</descricao>
+	</row>
+	<row>
+		<idbloco>6</idbloco>
+		<idunidade>1</idunidade>
+		<descricao>Bloco C</descricao>
+	</row>
+	<row>
+		<idbloco>7</idbloco>
+		<idunidade>2</idunidade>
+		<descricao>Bloco C-2° Andar</descricao>
+	</row>
+</name>
+<name name="divisoes">
+	<row>
+		<iddivisao>1</iddivisao>
+		<idarmario>1</idarmario>
+		<descricao>Gaveta A</descricao>
+	</row>
+	<row>
+		<iddivisao>2</iddivisao>
+		<idarmario>1</idarmario>
+		<descricao>Gaveta B</descricao>
+	</row>
+	<row>
+		<iddivisao>3</iddivisao>
+		<idarmario>1</idarmario>
+		<descricao>Gaveta C</descricao>
+	</row>
+	<row>
+		<iddivisao>5</iddivisao>
+		<idarmario>2</idarmario>
+		<descricao>Porta A</descricao>
+	</row>
+	<row>
+		<iddivisao>6</iddivisao>
+		<idarmario>2</idarmario>
+		<descricao>Porta C</descricao>
+	</row>
+</name>
+<name name="unidades">
+	<row>
+		<idunidade>1</idunidade>
+		<nome>Senai Cuiaba</nome>
+	</row>
+	<row>
+		<idunidade>2</idunidade>
+		<nome>Senai Rondonopolis</nome>
+	</row>
+	<row>
+		<idunidade>3</idunidade>
+		<nome>Senai Juina</nome>
+	</row>
+	<row>
+		<idunidade>4</idunidade>
+		<nome>Senai Escola da Contrução</nome>
+	</row>
+	<row>
+		<idunidade>6</idunidade>
+		<nome>Senai Sinop</nome>
+	</row>
+</name>
+<name name="usuarios">
+	<row>
+		<idusuario>1</idusuario>
+		<nome>Vitor Ribeiro dos Santos</nome>
+		<login>Vitor</login>
+		<senha>vitor0123</senha>
+		<dicasenha>v0123</dicasenha>
+		<nivel>0</nivel>
+	</row>
+	<row>
+		<idusuario>2</idusuario>
+		<nome>Thiago Leite</nome>
+		<login>Thiago</login>
+		<senha>0123</senha>
+		<dicasenha>0!@#</dicasenha>
+		<nivel>2</nivel>
+	</row>
+	<row>
+		<idusuario>3</idusuario>
+		<nome>Teste teste</nome>
+		<login>Teste</login>
+		<senha>123</senha>
+		<dicasenha>123</dicasenha>
+		<nivel>1</nivel>
+	</row>
+</name>
+</mysql>

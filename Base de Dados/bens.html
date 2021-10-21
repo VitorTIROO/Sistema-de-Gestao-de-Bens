@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>bens</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="date" content="Mon, 28 Jul 2014 14:24:03 -0300">
+	<meta name="generator" content="MySQL-Front 5.3  (Build 2.59)">
+	<style type="text/css"><!--
+		body {font-family: Arial,Helvetica,sans-serif; font-size: 11px;}
+		h1 {font-size: 17px; text-decoration: bold;}
+		h2 {font-size: 15px; text-decoration: bold;}
+		h3 {font-size: 13px; text-decoration: bold;}
+		th,
+		td {font-size: 11px; border-color: #000000; border-style: solid; border-width: 1px; padding: 1px; font-weight: normal;}
+		code {font-size: 11px;}
+		.TableObject {border-collapse: collapse; border-color: #000000; font-family: Microsoft Sans Serif}
+		.TableData {border-collapse: collapse; border-color: #000000; font-family: Microsoft Sans Serif}
+		.TableHeader {border-color: #000000; text-decoration: bold; background-color: #e0e0e0;}
+		.StructureHeader {padding-left: 5px; text-align: left; border-color: #000000; text-decoration: bold;}
+		.Structure {text-align: left; border-color: #aaaaaa;}
+		.odd {}
+		.even {}
+		.DataHeader {padding-left: 5px; text-align: left; border-color: #000000; background-color: #e0e0e0;}
+		.Null {color: #999999;}
+		.PrimaryKey {font-weight: bold;}
+		.RightAlign {text-align: right;}
+	--></style>
+</head>
+<body>
+<h1 class="DatabaseTitle">Database: bens</h1>
+<h2>Table: acess</h2>
+<h3>Keys:</h3>
+<table border="0" cellspacing="0" summary="acess" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">Primary Key</td><td>id</td><td>unique</td><td></td></tr>
+</table><br>
+<h3>Fields:</h3>
+<table border="0" cellspacing="0" summary="acess" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>NULL</th><th>Default</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">id</td><td>int(11)</td><td>No</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>usuario</td><td>varchar(200)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>dta</td><td>varchar(255)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>hora</td><td>varchar(255)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>horasaida</td><td>varchar(255)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+</table><br>
+<h3>Data:</h3>
+<table border="0" cellspacing="0" summary="acess" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">id</th><th class="DataHeader">usuario</th><th class="DataHeader">dta</th><th class="DataHeader">hora</th><th class="DataHeader">horasaida</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">36</th><td class="">Vitor</td><td class="">26/07/2014  </td><td class="">16:52:17</td><td class="">16:55:08</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">37</th><td class="">Vitor</td><td class="">26/07/2014  </td><td class="">16:56:06</td><td class="">16:56:11</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">38</th><td class="">Vitor</td><td class="">26/07/2014  </td><td class="">16:56:27</td><td class="">16:56:31</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">39</th><td class="">Vitor</td><td class="">26/07/2014  </td><td class="">16:56:46</td><td class="">16:57:09</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">40</th><td class="">Vitor</td><td class="">28/07/2014  </td><td class="">13:42:11</td><td class="">13:42:30</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">41</th><td class="">Vitor</td><td class="">28/07/2014  </td><td class="">13:46:50</td><td class="">13:47:07</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">42</th><td class="">Vitor</td><td class="">28/07/2014  </td><td class="">13:47:17</td><td class="">13:47:28</td></tr>
+</table><br style="page-break-after: always">
+<h2>Table: ambientes</h2>
+<h3>Keys:</h3>
+<table border="0" cellspacing="0" summary="ambientes" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">Primary Key</td><td>idambiente</td><td>unique</td><td></td></tr>
+	<tr class="Structure"><td >ambientes_FKIndex1</td><td>idbloco</td><td>&nbsp;</td><td></td></tr>
+</table><br>
+<h3>Fields:</h3>
+<table border="0" cellspacing="0" summary="ambientes" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>NULL</th><th>Default</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">idambiente</td><td>int(10) unsigned</td><td>No</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>idbloco</td><td>int(10) unsigned</td><td>No</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>descricao</td><td>varchar(30)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+</table><br>
+<h3>Data:</h3>
+<table border="0" cellspacing="0" summary="ambientes" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">idambiente</th><th class="DataHeader">idbloco</th><th class="DataHeader">descricao</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">1</th><td class="RightAlign">3</td><td class="">Tornearia</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">2</th><td class="RightAlign">3</td><td class="">Lab. Metrologia</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">3</th><td class="RightAlign">3</td><td class="">Sala Torno CNC</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">4</th><td class="RightAlign">3</td><td class="">Fresagem  e Ajustagem</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">5</th><td class="RightAlign">4</td><td class="">Sala 4</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">6</th><td class="RightAlign">2</td><td class="">Nucleo de Treinamento Avançado</td></tr>
+</table><br style="page-break-after: always">
+<h2>Table: armarios</h2>
+<h3>Keys:</h3>
+<table border="0" cellspacing="0" summary="armarios" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">Primary Key</td><td>idarmario</td><td>unique</td><td></td></tr>
+	<tr class="Structure"><td >armarios_FKIndex1</td><td>idambiente</td><td>&nbsp;</td><td></td></tr>
+</table><br>
+<h3>Fields:</h3>
+<table border="0" cellspacing="0" summary="armarios" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>NULL</th><th>Default</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">idarmario</td><td>int(10) unsigned</td><td>No</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>idambiente</td><td>int(10) unsigned</td><td>No</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>descricao</td><td>varchar(20)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+</table><br>
+<h3>Data:</h3>
+<table border="0" cellspacing="0" summary="armarios" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">idarmario</th><th class="DataHeader">idambiente</th><th class="DataHeader">descricao</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">1</th><td class="RightAlign">2</td><td class="">Armario 1</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">2</th><td class="RightAlign">2</td><td class="">Armario 2</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">3</th><td class="RightAlign">1</td><td class="">Armario 1</td></tr>
+</table><br style="page-break-after: always">
+<h2>Table: bens</h2>
+<h3>Keys:</h3>
+<table border="0" cellspacing="0" summary="bens" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">Primary Key</td><td>idben</td><td>unique</td><td></td></tr>
+	<tr class="Structure"><td >bens_FKIndex1</td><td>idambiente</td><td>&nbsp;</td><td></td></tr>
+	<tr class="Structure"><td >bens_FKIndex2</td><td>iddivisao</td><td>&nbsp;</td><td></td></tr>
+	<tr class="Structure"><td >bens_FKIndex3</td><td>idarmario</td><td>&nbsp;</td><td></td></tr>
+	<tr class="Structure"><td >bens_FKIndex4</td><td>idbloco</td><td>&nbsp;</td><td></td></tr>
+</table><br>
+<h3>Fields:</h3>
+<table border="0" cellspacing="0" summary="bens" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>NULL</th><th>Default</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">idben</td><td>int(10) unsigned</td><td>No</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>idbloco</td><td>int(10) unsigned</td><td>No</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>idarmario</td><td>int(10) unsigned</td><td>No</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>iddivisao</td><td>int(10) unsigned</td><td>No</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>idambiente</td><td>int(10) unsigned</td><td>No</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>tipo</td><td>varchar(20)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>descricao</td><td>varchar(50)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>marca</td><td>varchar(25)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>modelo</td><td>varchar(25)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>patrimonio</td><td>varchar(25)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>ni</td><td>int(2)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>valor</td><td>varchar(30)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+</table><br>
+<h3>Data:</h3>
+<table border="0" cellspacing="0" summary="bens" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">idben</th><th class="DataHeader">idbloco</th><th class="DataHeader">idarmario</th><th class="DataHeader">iddivisao</th><th class="DataHeader">idambiente</th><th class="DataHeader">tipo</th><th class="DataHeader">descricao</th><th class="DataHeader">marca</th><th class="DataHeader">modelo</th><th class="DataHeader">patrimonio</th><th class="DataHeader">ni</th><th class="DataHeader">valor</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">1</th><td class="RightAlign">3</td><td class="RightAlign">1</td><td class="RightAlign">1</td><td class="RightAlign">2</td><td class="">Ferramenta</td><td class="">Paquimetro</td><td class="">Mitutoyo</td><td class="">a1b2c3d4</td><td class="">67354348</td><td class="RightAlign">0</td><td class="">300,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">6</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="">Maquina</td><td class="">Centro de Usinagem</td><td class="">Romi</td><td class="">a1b2c3d4</td><td class="">056431386</td><td class="RightAlign">0</td><td class="">500.000,00</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">11</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">1</td><td class="">Maquina</td><td class="">Torno Convencional</td><td class="">Nardini </td><td class="">Mascote MS-205 </td><td class="">3130031384 </td><td class="RightAlign">0</td><td class="">20.000,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">12</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">1</td><td class="">Maquina</td><td class="">Torno Convencional</td><td class="">Nardini </td><td class="">Mascote MS-205 </td><td class="">3130031382 </td><td class="RightAlign">0</td><td class="">20.000,00</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">13</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">1</td><td class="">Maquina</td><td class="">Torno Convencional</td><td class="">Nardini </td><td class="">Mascote MS-205 </td><td class="">3130031381 </td><td class="RightAlign">0</td><td class="">20.000,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">15</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">1</td><td class="">Maquina</td><td class="">Torno Convencional</td><td class="">Nardini </td><td class="">Mascote MS-205 </td><td class="">3130003518 </td><td class="RightAlign">0</td><td class="">20.000,00</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">16</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">1</td><td class="">Maquina</td><td class="">Torno Convencional</td><td class="">Nardini </td><td class="">Mascote MS-205 </td><td class="">3130001724 </td><td class="RightAlign">0</td><td class="">20.000,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">17</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">1</td><td class="">Maquina</td><td class="">Torno Convencional</td><td class="">Nardini </td><td class="">Mascote MS-205 </td><td class="">3130004952 </td><td class="RightAlign">0</td><td class="">20.000,00</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">18</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">1</td><td class="">Maquina</td><td class="">Torno Convencional</td><td class="">Nardini </td><td class="">Mascote MS-205 </td><td class="">3130004953 </td><td class="RightAlign">0</td><td class="">20.000,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">19</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">1</td><td class="">Maquina</td><td class="">Torno Convencional</td><td class="">Nardini </td><td class="">Mascote MS-205 </td><td class="">3130001275 </td><td class="RightAlign">0</td><td class="">20.000,00</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">20</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">1</td><td class="">Maquina</td><td class="">Torno Convencional</td><td class="">Nardini </td><td class="">Mascote MS-205 </td><td class="">3130004951 </td><td class="RightAlign">0</td><td class="">20.000,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">22</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">3</td><td class="">Maquina</td><td class="">Torno CNC</td><td class="">Siemens</td><td class="">Sinumerik 802D base line</td><td class="">3130005498</td><td class="RightAlign">0</td><td class="">150.000,00</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">24</th><td class="RightAlign">3</td><td class="RightAlign">1</td><td class="RightAlign">1</td><td class="RightAlign">2</td><td class="">Instrumento</td><td class="">Paquimetro</td><td class="">Mitutoyo </td><td class="">50 divisões </td><td class="">00004</td><td class="RightAlign">1</td><td class="">300,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">25</th><td class="RightAlign">3</td><td class="RightAlign">1</td><td class="RightAlign">1</td><td class="RightAlign">2</td><td class="">Instrumento</td><td class="">Paquimetro</td><td class="">Mitutoyo</td><td class="">50 divisões</td><td class="">00001</td><td class="RightAlign">1</td><td class="">300,00</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">26</th><td class="RightAlign">3</td><td class="RightAlign">1</td><td class="RightAlign">1</td><td class="RightAlign">2</td><td class="">Ferramenta</td><td class="">Micrometro </td><td class="">Mitutoyo</td><td class="">0-25 Centesimal </td><td class="">00002</td><td class="RightAlign">1</td><td class="">300,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">27</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">4</td><td class="">Maquina</td><td class="">Plaina</td><td class="">Zocca</td><td class="">500</td><td class="">00003</td><td class="RightAlign">1</td><td class="">25.000,00</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">28</th><td class="RightAlign">3</td><td class="RightAlign">0</td><td class="RightAlign">0</td><td class="RightAlign">4</td><td class="">Maquina</td><td class="">Prensa Hidráulica</td><td class="">SMD</td><td class="">30 ton</td><td class="">3130001009 </td><td class="RightAlign">0</td><td class="">5.000,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">29</th><td class="RightAlign">3</td><td class="RightAlign">1</td><td class="RightAlign">1</td><td class="RightAlign">2</td><td class="">Instrumento</td><td class="">Paquimetro</td><td class="">Mitutoyo</td><td class="">20 divisões</td><td class="">00005</td><td class="RightAlign">1</td><td class="">300,00</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">30</th><td class="RightAlign">3</td><td class="RightAlign">3</td><td class="RightAlign">7</td><td class="RightAlign">1</td><td class="">Ferramenta</td><td class="">Chave de Placa</td><td class="">abcGrande</td><td class="">a1b2c3</td><td class="">00006</td><td class="RightAlign">1</td><td class="">20,00</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">31</th><td class="RightAlign">3</td><td class="RightAlign">3</td><td class="RightAlign">7</td><td class="RightAlign">1</td><td class="">Ferramenta</td><td class="">Chave de Placa</td><td class="">abcPequeno</td><td class="">a1b2c3</td><td class="">00007</td><td class="RightAlign">1</td><td class="">20,00</td></tr>
+</table><br style="page-break-after: always">
+<h2>Table: blocos</h2>
+<h3>Keys:</h3>
+<table border="0" cellspacing="0" summary="blocos" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">Primary Key</td><td>idbloco</td><td>unique</td><td></td></tr>
+	<tr class="Structure"><td >blocos_FKIndex1</td><td>idunidade</td><td>&nbsp;</td><td></td></tr>
+</table><br>
+<h3>Fields:</h3>
+<table border="0" cellspacing="0" summary="blocos" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>NULL</th><th>Default</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">idbloco</td><td>int(10) unsigned</td><td>No</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>idunidade</td><td>int(10) unsigned</td><td>No</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>descricao</td><td>varchar(20)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+</table><br>
+<h3>Data:</h3>
+<table border="0" cellspacing="0" summary="blocos" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">idbloco</th><th class="DataHeader">idunidade</th><th class="DataHeader">descricao</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">1</th><td class="RightAlign">2</td><td class="">Bloco A</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">2</th><td class="RightAlign">2</td><td class="">Bloco B</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">3</th><td class="RightAlign">2</td><td class="">Bloco C-1° Andar</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">4</th><td class="RightAlign">1</td><td class="">Bloco A</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">5</th><td class="RightAlign">1</td><td class="">Bloco B</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">6</th><td class="RightAlign">1</td><td class="">Bloco C</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">7</th><td class="RightAlign">2</td><td class="">Bloco C-2° Andar</td></tr>
+</table><br style="page-break-after: always">
+<h2>Table: divisoes</h2>
+<h3>Keys:</h3>
+<table border="0" cellspacing="0" summary="divisoes" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">Primary Key</td><td>iddivisao</td><td>unique</td><td></td></tr>
+	<tr class="Structure"><td >divisoes_FKIndex1</td><td>idarmario</td><td>&nbsp;</td><td></td></tr>
+</table><br>
+<h3>Fields:</h3>
+<table border="0" cellspacing="0" summary="divisoes" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>NULL</th><th>Default</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">iddivisao</td><td>int(10) unsigned</td><td>No</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>idarmario</td><td>int(10) unsigned</td><td>No</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>descricao</td><td>varchar(30)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+</table><br>
+<h3>Data:</h3>
+<table border="0" cellspacing="0" summary="divisoes" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">iddivisao</th><th class="DataHeader">idarmario</th><th class="DataHeader">descricao</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">1</th><td class="RightAlign">1</td><td class="">Gaveta A</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">2</th><td class="RightAlign">1</td><td class="">Gaveta B</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">3</th><td class="RightAlign">1</td><td class="">Gaveta C</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">5</th><td class="RightAlign">2</td><td class="">Porta A</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">6</th><td class="RightAlign">2</td><td class="">Porta C</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">7</th><td class="RightAlign">3</td><td class="">Gondola A</td></tr>
+</table><br style="page-break-after: always">
+<h2>Table: unidades</h2>
+<h3>Keys:</h3>
+<table border="0" cellspacing="0" summary="unidades" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">Primary Key</td><td>idunidade</td><td>unique</td><td></td></tr>
+</table><br>
+<h3>Fields:</h3>
+<table border="0" cellspacing="0" summary="unidades" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>NULL</th><th>Default</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">idunidade</td><td>int(10) unsigned</td><td>No</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>nome</td><td>varchar(50)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+</table><br>
+<h3>Data:</h3>
+<table border="0" cellspacing="0" summary="unidades" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">idunidade</th><th class="DataHeader">nome</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">1</th><td class="">Senai Cuiaba</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">2</th><td class="">Senai Rondonopolis</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">3</th><td class="">Senai Juina</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">4</th><td class="">Senai Escola da Contrução</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">6</th><td class="">Senai Sinop</td></tr>
+</table><br style="page-break-after: always">
+<h2>Table: usuarios</h2>
+<h3>Keys:</h3>
+<table border="0" cellspacing="0" summary="usuarios" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">Primary Key</td><td>idusuario</td><td>unique</td><td></td></tr>
+</table><br>
+<h3>Fields:</h3>
+<table border="0" cellspacing="0" summary="usuarios" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>Name</th><th>Type</th><th>NULL</th><th>Default</th><th>Extras</th><th>Comment</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">idusuario</td><td>int(10) unsigned</td><td>No</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>nome</td><td>varchar(50)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>login</td><td>varchar(30)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>senha</td><td>varchar(200)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>dicasenha</td><td>varchar(20)</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>nivel</td><td>int(10) unsigned</td><td>Yes</td><td class="Null">&lt;NULL&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+</table><br>
+<h3>Data:</h3>
+<table border="0" cellspacing="0" summary="usuarios" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">idusuario</th><th class="DataHeader">nome</th><th class="DataHeader">login</th><th class="DataHeader">senha</th><th class="DataHeader">dicasenha</th><th class="DataHeader">nivel</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">1</th><td class="">Vitor Ribeiro dos Santos</td><td class="">Vitor</td><td class="">vitor0123</td><td class="">v0123</td><td class="RightAlign">0</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">2</th><td class="">Thiago Leite</td><td class="">Thiago</td><td class="">0123</td><td class="">0!@#</td><td class="RightAlign">2</td></tr>
+</table><br style="page-break-after: always">
+</body>
+</html>

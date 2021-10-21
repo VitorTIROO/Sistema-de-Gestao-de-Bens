@@ -1,0 +1,52 @@
+#select d.descricao,d.iddivisao,am.descricao as ambiente,am.idambiente,ar.
+#descricao AS armario ,ar.idarmario,b.descricao as bloco,b.idbloco 
+#from divisoes as d,armarios as ar,
+# ambientes as am,blocos as b, unidades as u where
+# d.idarmario = ar.idarmario and 
+# ar.idambiente=am.idambiente and 
+# am.idbloco=b.idbloco and 
+# b.idunidade=u.idunidade and 
+# d.descricao = &amp;amp;amp;amp;amp;apos;Gaveta A&amp;amp;amp;amp;amp;apos; and 
+# ar.descricao = &amp;amp;amp;amp;amp;apos;Armario 1 &amp;amp;amp;amp;amp;apos; and 
+# am.descricao = &amp;amp;amp;amp;amp;apos;Lab. Metrologia&amp;amp;amp;amp;amp;apos; and 
+# b.descricao = &amp;amp;amp;amp;amp;apos;Bloco C&amp;amp;amp;amp;amp;apos; and 
+# u.nome = &amp;amp;amp;amp;amp;apos;Senai Rondonopolis&amp;amp;amp;amp;amp;apos;
+
+#select b.*,u.nome as unidade from bens as b,blocos as bl,unidades as u where
+# b.idbloco = bl.idbloco and bl.idunidade = u.idunidade
+
+#select * from bens as b,blocos as bl,unidades as u where b.idbloco = bl.idbloco and bl.idunidade = u.idunidade
+
+#select b.idben,b.descricao ,b.tipo,b.marca,b.modelo,b.patrimonio,b.valor,
+#u.nome as unidade,b.iddivisao,b.idarmario,b.idambiente,b.idbloco,
+#bl.descricao as bloco from bens as b,blocos as bl,unidades as u where
+# b.idbloco = bl.idbloco and bl.idunidade = u.idunidade
+
+
+#select b.idben,b.descricao as ben ,b.tipo,b.marca,b.modelo,b.patrimonio,b.valor,u.nome as 
+#                unidade,b.iddivisao,b.idarmario,b.idambiente,b.idbloco,
+#                bl.descricao as bloco from bens as b,blocos as bl,unidades as u where
+#                 b.idbloco = bl.idbloco and bl.idunidade = u.idunidade and bl.descricao = &amp;amp;amp;amp;apos;Bloco cc&amp;amp;amp;amp;apos;
+
+
+#select * from divisoes as d,armarios as ar,ambientes as a,blocos as b, unidades as u 
+# where ar.idambiente = a.idambiente and a.idbloco = b.idbloco AND 
+# b.idunidade = u.idunidade and d.descricao = &amp;amp;amp;amp;apos;Gaveta A&amp;amp;amp;amp;apos; and
+#  ar.descricao = &amp;amp;amp;amp;apos;Armario 1&amp;amp;amp;amp;apos; and 
+# a.descricao = &amp;amp;amp;amp;apos;Lab. Metrologia&amp;amp;amp;amp;apos; and 
+# b.descricao = &amp;amp;amp;amp;apos;Bloco c&amp;amp;amp;amp;apos; and u.nome = &amp;amp;amp;amp;apos;Senai Rondonopolis&amp;amp;amp;amp;apos;
+
+#SELECT b.idben,b.tipo,b.descricao,b.marca,b.modelo,b.patrimonio,b.valor,d.descricao as divisao,
+#ar.descricao as armario,am.descricao as ambiente,blo.descricao as bloco,u.nome as unidade
+# from bens as b,divisoes as d,armarios as ar,ambientes as am,blocos as blo,unidades as u where 
+#b.iddivisao = d.iddivisao and d.idarmario = ar.idarmario and ar.idambiente = am.idambiente and 
+#am.idbloco = blo.idbloco and blo.idunidade = u.idunidade and 
+#b.marca like &amp;amp;amp;amp;apos;%rom%&amp;amp;amp;amp;apos;
+
+
+#sELECT b.idben,b.tipo,b.descricao,b.marca,b.modelo,b.patrimonio,b.valor,
+#blo.descricao as bloco from bens as b,blocos as blo,unidades as u where 
+#b.iddivisao = blo.idbloco
+
+
+

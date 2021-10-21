@@ -1,0 +1,48 @@
+#//Sql Relatorio Geral - Senai Rondonopolis
+
+#select b.descricao as ben,b.patrimonio,b.valor,b.modelo,b.marca,u.nome,bo.descricao as bloco
+#from bens as b,blocos as bo,unidades as U 
+#where b.idbloco = bo.idbloco and bo.idunidade=u.idunidade
+#and u.idunidade = 2
+
+#select b.*,a.descricao as ambiente,u.nome as unidade from bens as b,ambientes as a,blocos as bl,unidades 
+#               AS u where b.idambiente = a.idambiente and a.idbloco = bl.idbloco and bl.idunidade = u.idunidade and 
+#               a.idambiente = 3 and bl.idbloco = 3 and 
+#               u.idunidade = 2
+
+#select * from bens where patrimonio like &amp;amp;amp;amp;apos;31300%&amp;amp;amp;amp;apos;
+#select * from bens where patrimonio = 89
+
+#select b.*,bo.descricao as bloco,u.nome unidade from bens as b,blocos as bo,unidades as u 
+#where b.idbloco = bo.idbloco and bo.idunidade = u.idunidade and b.ni = 1 and u.idunidade = 2 order by b.patrimonio asc
+
+#select b.*,bo.descricao as bloco,u.nome unidade from bens as b,blocos as bo,unidades as u 
+#where b.idbloco = bo.idbloco and bo.idunidade = u.idunidade and b.ni = 0 and u.idunidade = 2
+
+
+#select b.*,a.descricao as ambiente,u.nome as unidade from bens as b,ambientes as a,blocos as bl,unidades AS u 
+#where b.idambiente = a.idambiente and a.idbloco = bl.idbloco and bl.idunidade = u.idunidade and a.idambiente = 1 and bl.idbloco = 3 and u.idunidade = 2 and b.ni = 0
+
+#select b.*,a.descricao as ambiente,u.nome as unidade from bens as b,ambientes as a,blocos as bl,unidades 
+#               AS u where b.idambiente = a.idambiente and a.idbloco = bl.idbloco and bl.idunidade = u.idunidade and 
+#               a.idambiente = 2 and bl.idbloco = 3 and 
+#               u.idunidade = 2 and b.ni = 1
+
+#select b.*,a.descricao as ambiente,u.nome as unidade from bens as b,ambientes as a,blocos as bl,unidades 
+#               AS u where b.idambiente = a.idambiente and a.idbloco = bl.idbloco and bl.idunidade = u.idunidade and 
+#               a.idambiente = 4 and bl.idbloco = 3 and 
+#               u.idunidade = 2 and b.ni = 1
+
+#select b.*,a.descricao as ambiente,u.nome as unidade from bens as b,ambientes as a,blocos as bl,unidades 
+#               AS u where b.idambiente = a.idambiente and a.idbloco = bl.idbloco and bl.idunidade = u.idunidade and 
+#               a.idambiente = 2 and bl.idbloco = 3 and 
+#               u.idunidade = 2 and b.ni = 1
+
+#select b.*,a.descricao as ambiente,u.nome as unidade from bens as b,ambientes as a,blocos as bl,unidades 
+#               AS u where b.idambiente = a.idambiente and a.idbloco = bl.idbloco and bl.idunidade = u.idunidade and 
+#               a.idambiente = 3 and bl.idbloco = 3 and 
+#               u.idunidade = 2 and b.ni = 1
+
+select b.*,a.descricao as ambiente,u.nome as unidade from bens as b,ambientes as a,blocos as bl,unidades AS u 
+where b.idambiente = a.idambiente and a.idbloco = bl.idbloco and bl.idunidade = u.idunidade and a.idambiente = 1 and bl.idbloco = 3 and u.idunidade = 2
+and b.ni = 0
